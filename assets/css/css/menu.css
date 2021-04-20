@@ -12,6 +12,9 @@ html{
     height: 49px;
     margin: 50px auto;
     background-color: rgb(32, 172, 226);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 995;
 }
 #nav{
     display: inline-block;
@@ -63,13 +66,30 @@ html{
 	opacity: 1;
     visibility: visible;
 }
-#nav .sub-nav ul li{
+/* #nav .sub-nav ul {
     top: 0;
     left: 100%;
-}
+} */
 .homepage{
     width: 196px;
     height: 49px;
     background-color: red;
     text-align: center;
+}
+#nav .sub-nav > a:after {
+    opacity: 0;
+    content: "";
+    background: #c90202;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    z-index: -2;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
 }
