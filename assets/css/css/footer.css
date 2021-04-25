@@ -73,7 +73,7 @@ b,strong{
     width: 50%;
     box-sizing: border-box;
     padding: 15px 0;
-    -webkit-flex-flow: nowrap;
+    -webkit-flex-flow: row wrap;
 }
 .ft-2 {
     width: 19%;
@@ -110,7 +110,7 @@ p{
     margin-bottom: 7px;
 }
 ._2zfs {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 100%); */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7) 0%, rgba(0, 0, 0, 0) 100%);
     height: 100%;
     left: 0;
     position: absolute;
