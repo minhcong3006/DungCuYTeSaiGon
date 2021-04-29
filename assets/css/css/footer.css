@@ -55,7 +55,6 @@
 }
 .w-clear{
     position: relative;
-    color: #fff;
 }
 b,strong{
     font-weight: bold;
@@ -94,6 +93,7 @@ b,strong{
     width: 23%;
     box-sizing: border-box;
     padding: 15px 0px;
+    
 }
 .flex {
     display: -webkit-box;
@@ -101,9 +101,9 @@ b,strong{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
+    -webkit-flex-flow: row wrap;
 }
 p{
     margin: 0 0 15px 0;
@@ -118,3 +118,11 @@ p{
     width: 100%;
     z-index: -1;
 }
+#footer, #footer a {
+    color: #fff;
+}
+.fa-caret-right:before {
+    content: "\f0da";
+}
+
+
