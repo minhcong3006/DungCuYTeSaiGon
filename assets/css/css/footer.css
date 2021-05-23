@@ -126,18 +126,19 @@ p{
 }
 
 .btn-top {
-    background-image: url(../img/on-top.jpg);
+    background-image: url(../img/download.png);
     background-repeat: no-repeat;
     border: medium none;
     bottom: 20px;
     cursor: pointer;
     display: none;
     height: 50px;
+    width: 50px;
     outline: medium none;
     padding: 0;
     position: fixed;
     right: 20px;
-    width: 50px;
+    border-radius: 10px;
     z-index: 99999;
 }
 
