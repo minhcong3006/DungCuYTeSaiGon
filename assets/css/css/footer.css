@@ -126,7 +126,9 @@ p{
 }
 
 .btn-top {
-    background-image: url(../img/download.png);
+    content: "\f062";
+    font-family: 'Font Awesome 5 Free';
+    background-color: #FF9800;
     background-repeat: no-repeat;
     border: medium none;
     bottom: 20px;
@@ -141,5 +143,6 @@ p{
     border-radius: 10px;
     z-index: 99999;
 }
+
 
 

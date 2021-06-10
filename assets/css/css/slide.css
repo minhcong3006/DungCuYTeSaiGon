@@ -30,83 +30,7 @@
     border-top: none;
     background: #f7f7f7;
 }
-/* .menu-left{
-    margin: 0px;
-    border-top: none;
-    border-right: 1px solid #f6f6f6;
-    border-left: 1px solid #f6f6f6;
-    position: relative;
-    background: #fff;
-}
-.menu-left a {
-    font-size: 14px;
-    line-height: 20px;
-    display: block;
-    text-align: left;
-    padding: 10px 15px;
-}
-.menu-left .menu-level1{
-    z-index: 99;
-    border-bottom: 1px solid #f6f6f6;
-    position: relative;
-}
-.menu-left li{
-    display: block;
-    position: relative;
-}
-.menu-left .menu-level1 > a {
-    padding: 12px 10px 7px 15px;
-    font: 16px/20px utma;
-    color: #000;
-    transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-    -moz-transition: all 0.1s;
-}
-.menu-left li ul {
-    width: 100%;
-    position: relative;
-    top: 0px;
-    background: #fffdfd;
-    min-width: 200px;
-    margin: 0;
-    display: none;
-    z-index: 9999;
-}
-#slider .menu-left li ul {
-    position: absolute;
-    top: 0;
-    padding: 0px 0;
-    left: 100%;
-    background: #fffdfd;
-    min-width: 250px;
-    margin: 0;
-    display: none;
-    z-index: 9999;
-    width: auto;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=0, Color=#000000)";
-    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 0 5px rgb(0 0 0 / 50%);
-    box-shadow: 0 0 5px rgb(0 0 0 / 50%);
-    filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=135, Color=#000000";
-}
-.menu-left svg.dot {
-    padding: 10px;
-}
-.menu-left .dot {
-    position: absolute;
-    right: 0px;
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    padding: 5px 5px;
-    cursor: pointer;
-    text-align: center;
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-}
-.menu-left .menu-level2 > a {
-    padding: 10px 15px 10px 15px;
-} */
+
 #Slider .mid {
     width: calc(100% - 270px);
     
@@ -145,6 +69,7 @@ a{
     position: relative;
     display: block;
     box-sizing: border-box;
+    align-items: center;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -172,12 +97,14 @@ a{
 }
 .slick-slider img {
     display: inline-block;
+    
 }
 img {
     border: none;
     max-width: 100%;
     vertical-align: middle;
     height: auto;
+    
 }
 .slick-initialized .slick-slide {
     display: block;
@@ -204,16 +131,29 @@ img {
     background-size: cover;
 }
 
-.slick-prev{
-    left: 0;
-    cursor: pointer;
-    text-align: center;
-    display: inline-block;
-}
+
 .slick-next{
     right: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 46%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    z-index: 99;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    transform: rotate(180deg);
 }
-.slick-prev .slick-next{
+.slick-prev{
     font-size: 0;
     line-height: 0;
     position: absolute;
@@ -231,7 +171,7 @@ img {
     border: none;
     outline: none;
     background: transparent;
-    
+
 }
 
 .slick-track{
@@ -242,14 +182,15 @@ img {
 }
 
 .box-sp{
-    width: 100%;
+    width: 200px;
     position: relative;
     margin: 0px auto 0px auto;
     color: black;
     text-align: center;
     background-color: #fff;
     padding: 10px;
-    border: 1px solid #fff;
+    border: 1px solid rgb(255, 255, 255);
+
 }
 
 .box-sp .images{
@@ -335,7 +276,39 @@ h3{
     margin: 0;
     align-items: stretch;
 }
-.col_4 > div{
+.col_4 {
     max-width: calc((100% / 4) -20px);
-    margin: 10px
+    margin: 10px;
+}
+/* -------- */
+.control{
+    position: relative;
+    max-width: 100%;
+    height: 50px;
+}
+.control .numbers{
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .35rem;
+    justify-content: center;
+}
+.control .numbers li a{
+    text-decoration: none;
+}
+div.control ul.numbers {
+    margin: 2px 0;
+    white-space: nowrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.page-link{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #4e73df;
+    background-color: #fff;
+    border: 1px solid #dddfeb;
 }
