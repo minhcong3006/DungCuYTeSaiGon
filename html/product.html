@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/assets/css/css/content.css">
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script src="../assets/css/js/btn-top.js"></script>
+
     <title>Sản Phẩm</title>
 </head>
 <body>
@@ -69,6 +70,20 @@
         </div>       
     </div>
     </div>
+    <script>
+        $(function (){
+
+        $('#nav li a').each(function(){
+            var path = window.location.href;
+            var current = path.substring(path.lastIndexOf('/')+1);
+            var url = $(this).attr('href');
+
+            if(url == current){
+                $(this).addClass('active');
+            };
+        });         
+        });
+    </script>
 <!-- menu -->
     <div id="main">
         <div id="header">
@@ -180,14 +195,7 @@
                             <ul class="menu-left">
                                 <li class="menu-level1">
                                     <a>Dụng cụ chuyên khoa</a>
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-right" 
-										role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" 
-										class="svg-inline--fa fa-chevron-right dot"><path fill="currentColor" 
-										d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10
-										.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4
-										.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4
-										.686-4.687-12.284-4.687-16.97 0z" class=""></path>
-                                    </svg>
+                                    
                                     <ul>
                                         <li class="menu-level2">
                                             <a>Dụng Cụ Thí Nghiệm</a>
@@ -206,14 +214,7 @@
                                 </li>
                                 <li class="menu-level1">
                                     <a>Dụng cụ vật lý trị liệu</a>
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-right" 
-										role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20px" height="20px"
-										class="svg-inline--fa fa-chevron-right dot"><path fill="currentColor" 
-										d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10
-										.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4
-										.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4
-										.686-4.687-12.284-4.687-16.97 0z" class=""></path>
-                                    </svg>
+                                    
                                    <ul>
                                         <li class="menu-level2">
                                             <a>Dụng Cụ Diện Chuẩn</a>
@@ -225,14 +226,7 @@
                                 </li>
                                 <li class="menu-level1">
                                     <a>Dụng cụ y tế inox</a>
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-right" 
-										role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20px" height="20px"
-										class="svg-inline--fa fa-chevron-right dot"><path fill="currentColor" 
-										d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10
-										.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4
-										.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4
-										.686-4.687-12.284-4.687-16.97 0z" class=""></path>
-                                    </svg>
+                                    
                                     <ul>
                                         <li class="menu-level2">
                                             <a>Khay - Chén Inox Y Tế</a>
@@ -244,14 +238,7 @@
                                 </li>
                                 <li class="menu-level1">
                                     <a>Đai nẹp y tế</a>
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-right" 
-										role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20px" height="20px"
-										class="svg-inline--fa fa-chevron-right dot"><path fill="currentColor" 
-										d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10
-										.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4
-										.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4
-										.686-4.687-12.284-4.687-16.97 0z" class=""></path>
-                                    </svg>
+                                    
                                     <ul>
                                         <li class="menu-level2">
                                             <a>Đai Nẹp Đầu - Ngực - Cổ</a>
@@ -263,14 +250,7 @@
                                 </li>
                                 <li class="menu-level1">
                                     <a>Đèn y khoa</a>
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-right" 
-										role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20px" height="20px"
-										class="svg-inline--fa fa-chevron-right dot"><path fill="currentColor" 
-										d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10
-										.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4
-										.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4
-										.686-4.687-12.284-4.687-16.97 0z" class=""></path>
-                                    </svg>
+                                   
                                     <ul>
                                         <li class="menu-level2">
                                             <a>Đèn Hồng Ngoại</a>
@@ -282,14 +262,7 @@
                                 </li>
                                 <li class="menu-level1">
                                     <a>Máy móc y khoa</a>
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-right" 
-										role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20px" height="20px"
-										class="svg-inline--fa fa-chevron-right dot"><path fill="currentColor" 
-										d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10
-										.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4
-										.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4
-										.686-4.687-12.284-4.687-16.97 0z" class=""></path>
-                                    </svg>
+                                    
                                     <ul>
                                         <li class="menu-level2">
                                             <a>Máy Đo Đường Huyết</a>
@@ -301,14 +274,7 @@
                                 </li>
                                 <li class="menu-level1">
                                     <a>Mẹ và bé</a>
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-right" 
-										role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20px" height="20px"
-										class="svg-inline--fa fa-chevron-right dot"><path fill="currentColor" 
-										d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10
-										.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4
-										.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4
-										.686-4.687-12.284-4.687-16.97 0z" class=""></path>
-                                    </svg>
+                                    
                                     <ul>
                                         <li class="menu-level2">
                                             <a>Máy Hút Mũi Cho Bé</a>
@@ -320,14 +286,7 @@
                                 </li>
                                 <li class="menu-level1">
                                     <a>Trang thiết bị y khoa</a>
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-right" 
-										role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20px" height="20px"
-										class="svg-inline--fa fa-chevron-right dot"><path fill="currentColor" 
-										d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10
-										.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4
-										.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4
-										.686-4.687-12.284-4.687-16.97 0z" class=""></path>
-                                    </svg>
+                                    
                                     <ul>
                                         <li class="menu-level2">
                                             <a>Bàn Ăn Bệnh Nhân</a>
@@ -339,14 +298,7 @@
                                 </li>
                                 <li class="menu-level1">
                                     <a>Vật tư y tế tiêu hoa</a>
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chevron-right" 
-										role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="20px" height="20px"
-										class="svg-inline--fa fa-chevron-right dot"><path fill="currentColor" 
-										d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10
-										.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4
-										.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4
-										.686-4.687-12.284-4.687-16.97 0z" class=""></path>
-                                    </svg>
+                                    
                                     <ul>
                                         <li class="menu-level2">
                                             <a>Bông Băng Gạt</a>
@@ -425,7 +377,7 @@
                                 <div class="box-sp w-clear">
                                     <a href="" tabindex="-1">
                                         <div class="images">
-                                            <img src="../assets/css/img/xe-tiem-thuoc-30x40-2-tang1561266976.jpg" alt="xe tiem 30*40 2 tang 2 vong thau">
+                                            <img src="../assets/css/img/stock-photo-95106257.jpg" alt="xe tiem 30*40 2 tang 2 vong thau">
                                         </div>
                                         
                                     </a>

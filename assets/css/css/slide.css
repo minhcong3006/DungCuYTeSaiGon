@@ -201,6 +201,9 @@ img {
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
+    text-align: center;
+    height: 178px;
+    
 }
 .box-sp .images img, .box-dt .images img, .box-qc .images img, .logo, .logo img{
     -webkit-transition: all 0.7s;
@@ -215,6 +218,8 @@ img {
     -o-transition: all 0.5s;
     z-index: 9;
     background: #fff;
+    max-width: 100%;
+    max-height: 100%;
 }
 .box-sp .new {
     right: 10px;

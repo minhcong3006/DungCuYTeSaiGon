@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="/assets/css/css/slide.css">
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script src="../assets/css/js/btn-top.js"></script>
+    <script src="../assets/css/js/slider.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
     <title>Trang chủ</title>
 
 </head>
@@ -71,14 +74,28 @@
         </div>       
     </div>
     </div>
+    <script>
+        $(function (){
+
+        $('#nav li a').each(function(){
+            var path = window.location.href;
+            var current = path.substring(path.lastIndexOf('/')+1);
+            var url = $(this).attr('href');
+
+            if(url == current){
+                $(this).addClass('active');
+            };
+        });         
+        });
+    </script>
 <!-- menu -->
     <div id="main">
         <div id="header">
             <ul id="nav">
                 <li class="homepage">
                     <a href="index.html">Trang chủ</a>
-                </li>
-                <li><a href="about.html">Giới thiệu</a>
+                </li >
+                <li ><a href="about.html" >Giới thiệu</a>
                 <li><a href="product.html">Sản phẩm</a> 
                     <ul class="sub-nav">
                         <li> 
@@ -672,7 +689,7 @@
                                 <div class="box-sp w-clear">
                                     <a href="" tabindex="-1">
                                         <div class="images">
-                                            <img src="../assets/css/img/xe-tiem-thuoc-30x40-2-tang1561266976.jpg" alt="xe tiem 30*40 2 tang 2 vong thau">
+                                            <img src="../assets/css/img/stock-photo-95106257.jpg" alt="xe tiem 30*40 2 tang 2 vong thau">
                                         </div>
                                         <div class="new">
                                         </div>
@@ -1383,7 +1400,7 @@
             </div>
             <div class="w-clear">
                 <div class="slick_5 slick-initialized slick-slider">
-                    <img src="../assets/css/img/prev-20.png" alt="prev" class="slick-prev slick-arrow" style="display: block;">
+                    <img src="../assets/css/img/prev-20.png" onclick="browserButton(1)" alt="prev" class="slick-prev slick-arrow" style="display: block;">
                     <div aria-live="polite" class="slick-list draggable">
                         
                         <div class="slick-track" role="listbox" style="opacity: 1; display: flex; width: 4444px; transform: transform3d(-2020px, 0px, 0px) ; ">
@@ -3525,7 +3542,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="../assets/css/img/prev-20.png" alt="prev" class="slick-next slick-arrow" style="display: block;">
+                    <img src="../assets/css/img/prev-20.png"   alt="prev" class="slick-next slick-arrow" style="display: block;">
                     
                 </div>
             </div>
@@ -3553,6 +3570,7 @@
                             <div class="name">Liên hệ </div>
                             <p>Điền đầy đủ thông tin bên dưới để đặt hàng hoặc liên hệ với chúng tôi</p>
                     <script>
+                        
                             grecaptcha.ready(function () {
                             grecaptcha.execute('6LeRUaoUAAAAALRw3V51be-ptixaAld5nqvXEwq9', { action: 'contact' }).then(function (token) {
                             var recaptchaResponse = document.getElementById('recaptchaResponse');
@@ -3593,7 +3611,21 @@
                     document.frm.submit();
                 }
             </script>
-        
+            <!-- <script>
+                $(document).ready(function() {
+ 
+                $("#slick-slider").owlCarousel({
+
+                    autoPlay: 3000, 
+
+                    items : 4,
+                    itemsDesktop : [1199,3],
+                    itemsDesktopSmall : [979,3]
+
+                });
+
+                });
+            </script> -->
             <form method="post" name="frm" action="" enctype="multipart/form-data">
                         <div class="w-clear">
         

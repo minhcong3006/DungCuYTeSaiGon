@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/assets/css/css/contact.css">
     <link rel="stylesheet" href="/assets/css/css/footer.css">
     <link rel="stylesheet" href="/assets/css/css/content.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 
     <title>Kiến thức y Khoa</title>
 </head>
@@ -67,6 +68,20 @@
         </div>       
     </div>
     </div>
+    <script>
+        $(function (){
+
+        $('#nav li a').each(function(){
+            var path = window.location.href;
+            var current = path.substring(path.lastIndexOf('/')+1);
+            var url = $(this).attr('href');
+
+            if(url == current){
+                $(this).addClass('active');
+            };
+        });         
+        });
+    </script>
 <!-- menu -->
     <div id="main">
         <div id="header">
