@@ -169,3 +169,87 @@ input, textarea {
     color: #f00;
     text-transform: uppercase;
 }
+/* ------------------- */
+.row-new{
+    position: relative;
+    padding-top: 0;
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 0.2fr 1fr;
+    width: 100%;
+    height: 250px;
+    border: 1px solid rgb(32, 32, 32);
+}
+.img-blog{
+    position: relative;
+    min-height: 80px;
+    min-width: 80px;
+    background: #fff;
+    padding: 20px;
+}
+.content-blog{
+    position: relative;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+.content-blog p{
+    padding:  30px 0px;
+    margin: 0 auto;
+    
+}
+.content-blog a h3{
+    padding:  10px 0px;
+}
+
+.img-blog img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px
+}
+
+.box-new{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container-new .title{
+    padding: 20px;
+    margin: 30px;
+}
+.container-new .img-new {
+    text-align: center;
+}
+.container-new .content-new{
+    padding: 20px;
+    line-height: 30px;
+    
+}
+
+.news {
+    overflow: hidden;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    background: #fff;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+.news ul li {
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #efefef;
+    padding-bottom: 10px;
+}
+.news ul li img {
+    float: left;
+    width: 140px;
+    height: 100px;
+    margin-right: 10px;
+    border: 3px solid #eaeaea;
+}
+.news ul li a h4{
+    margin: 40px;
+}
